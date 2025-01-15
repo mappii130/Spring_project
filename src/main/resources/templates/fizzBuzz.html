@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmls:th="http://www.thymeleaf.org">
+	
+	<head>
+		<meta charset="utf-8" />
+		<title>FizzBuzz</title>
+	</head>
+	
+	<body>
+		<h1>FizzBuzz</h1>
+		<ul th:each="fizzBuzzItem : ${fizzBuzzList}">
+			<li th:text="${fizzBuzzItem}"></li>		
+		</ul>
+	</body>
+	
+</html>
