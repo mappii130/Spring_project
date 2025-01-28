@@ -17,7 +17,7 @@ public class FizzBuzzController {
 	@GetMapping("list")
 	public String getFizzBuzzList(Model model) {
 		
-		List<Object> fizzBuzzList = fizzbuzzService.getFizzBuzzList();
+		List<String> fizzBuzzList = fizzbuzzService.getFizzBuzzList();
 		
 		model.addAttribute("fizzBuzzList", fizzBuzzList);
 		

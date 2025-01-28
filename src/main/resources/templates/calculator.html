@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.thymeleaf.org">
+	
+	<head>
+		<meta charset="utf-8" />
+		<title>計算機</title>
+	</head>
+	
+	<body>
+		<h1>計算機</h1>
+		<form action="calculatet" method="post">
+			<input type="text" name="num1" th:value="${num1}"/>
+			<select name="operator">
+				<option value="+" th:selected="${operator == '+'}">+</option>
+				<option value="-" th:selected="${operator == '-'}">-</option>
+				<option value="*" th:selected="${operator == '*'}">×</option>
+				<option value="/" th:selected="${operator == '/'}">÷</option>
+			</select>
+			<input type="text" name="num2" th:value="${num2}"/>
+			<button type="submit">=</button>
+		</form>
+		<p th:text="${result}"></p>
+	</body>
+	
+</html>

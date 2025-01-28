@@ -8,9 +8,9 @@ import org.springframework.stereotype.Service;
 @Service
 public class FizzBuzzService {
 	
-	public List<Object> getFizzBuzzList() {
+	public List<String> getFizzBuzzList() {
 		
-		List<Object> fizzBuzzList = new ArrayList<>();
+		List<String> fizzBuzzList = new ArrayList<>();
 		
 		for (int i = 0; i <= 100; i++) {
 				
@@ -21,7 +21,7 @@ public class FizzBuzzService {
 			} else if (i % 5 == 0) {
 				fizzBuzzList.add("Buzz");
 			} else {
-				fizzBuzzList.add(i);
+				fizzBuzzList.add(String.valueOf(i));
 			}
 		}
 		
