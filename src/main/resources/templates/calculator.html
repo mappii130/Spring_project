@@ -9,14 +9,14 @@
 	<body>
 		<h1>計算機</h1>
 		<form action="calculatet" method="post">
-			<input type="text" name="num1" th:value="${num1}"/>
+			<input type="number" name="num1" th:value="${num1}"/>
 			<select name="operator">
 				<option value="+" th:selected="${operator == '+'}">+</option>
 				<option value="-" th:selected="${operator == '-'}">-</option>
 				<option value="*" th:selected="${operator == '*'}">×</option>
 				<option value="/" th:selected="${operator == '/'}">÷</option>
 			</select>
-			<input type="text" name="num2" th:value="${num2}"/>
+			<input type="number" name="num2" th:value="${num2}"/>
 			<button type="submit">=</button>
 		</form>
 		<p th:text="${result}"></p>
